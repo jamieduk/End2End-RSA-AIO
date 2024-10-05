@@ -18,26 +18,23 @@ The RSA Encryption Tool is a simple application for encrypting and decrypting me
 ### On Ubuntu, you can install the required dependencies using:
 ```bash
 sudo apt update
-sudo apt install build-essential libgtk-3-dev libssl-dev
+sudo apt install -y build-essential libgtk-3-dev libssl-dev
 Building the Application
 To build the application, follow these steps:
 
 Clone the repository:
 
-bash
-Copy code
+
 git clone <repository-url>
 cd <repository-folder>
 Compile the source code:
 
-bash
-Copy code
+
 gcc `pkg-config --cflags gtk+-3.0` -o rsa_encryption_tool rsa_encryption_tool.c `pkg-config --libs gtk+-3.0` -lssl -lcrypto
 Usage
 Run the application:
 
-bash
-Copy code
+
 ./rsa_encryption_tool
 Generating Keys:
 
