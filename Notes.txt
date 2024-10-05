@@ -1,17 +1,17 @@
 
 End 2 End Secure Messaging App For C
 
+https://github.com/jamieduk/End2End-RSA-AIO
 
 
-gcc -o e2e e2e.c `pkg-config --cflags --libs gtk+-3.0` -lssl -lcrypto
+
+gcc `pkg-config --cflags gtk+-3.0 openssl` -o e2e e2e.c `pkg-config --libs gtk+-3.0` -lssl -lcrypto
+
 
 sudo chmod +x ./e2e
 
 ./e2e
 
-
-
-gcc `pkg-config --cflags gtk+-3.0 openssl` -o e2e e2e.c `pkg-config --libs gtk+-3.0` -lssl -lcrypto
 
 
 

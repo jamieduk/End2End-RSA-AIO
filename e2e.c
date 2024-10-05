@@ -220,8 +220,8 @@ void about_dialog(GtkWidget *widget, gpointer data) {
     GtkWidget *dialog=gtk_about_dialog_new();
     gtk_about_dialog_set_program_name(GTK_ABOUT_DIALOG(dialog), "RSA Encryption Tool");
     gtk_about_dialog_set_version(GTK_ABOUT_DIALOG(dialog), "1.0");
-    gtk_about_dialog_set_comments(GTK_ABOUT_DIALOG(dialog), "This application encrypts and decrypts messages using RSA.");
-    gtk_about_dialog_set_website(GTK_ABOUT_DIALOG(dialog), "http://example.com");
+    gtk_about_dialog_set_comments(GTK_ABOUT_DIALOG(dialog), "End-to-End Communication\n\nThis is a simple encryption/decryption tool By Jay Mee @ J~Net 2024.");
+    gtk_about_dialog_set_website(GTK_ABOUT_DIALOG(dialog), "htts://jnet.forumotion.com");
     gtk_dialog_run(GTK_DIALOG(dialog));
     gtk_widget_destroy(dialog);
 }
